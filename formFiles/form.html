@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</Form></title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="container">
+    <form id="myForm" action="https://api.web3forms.com/submit" method="POST" >
+      <!-- <i class="fas fa-paper-plane"></i> -->
+      <input type="hidden" name="access_key" value="39e4a37b-5263-47e7-9505-a09dca32c03c">
+
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" class="input-name" onkeyup="nameValid()">
+        <span class="error-name"></span>
+      </div>
+
+      
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" class="input-email" onkeyup=" emailValid()">
+        <span class="error-email"></span>
+      </div>   
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" class="input-phone" onkeyup=" phoneValid()">
+        <span class="error-phone"></span>
+      </div>
+
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" class="input-text" onkeyup="textareaValid()"></textarea>
+        <span class="error-message"></span>
+      </div>
+
+      <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      <button type="submit" class="input-submit" onclick="validateForm() ">Send</button>
+
+
+    <!-- <button type="submit">Submit</button> -->
+  </form>
+
+
+
+  
+  </div>
+  <script src="form.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+   
+</body>
+</html>
