@@ -255,7 +255,7 @@ nav {
   /* flex-direction: column; */
   flex-wrap: wrap;
   position: relative;
-  /* bottom: 10vh; */
+  bottom: 10vh;
   gap: 5vw;
 }
 .social-icons a img {
@@ -372,7 +372,6 @@ footer {
 }
 .foot-2 {
   width: 100%;
-  padding: 60px 0;
   height: 80%;
   display: flex;
   align-items: center;
